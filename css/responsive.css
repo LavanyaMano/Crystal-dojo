@@ -53,6 +53,7 @@ body {
 @media screen and (max-width: 768px) {
     .header {
         padding: 10px;
+        font-size: 18px;
     }
 
     .container {
@@ -67,10 +68,23 @@ body {
 /* Media query for even smaller screens (e.g., smartphones) */
 @media screen and (max-width: 480px) {
     .header {
-        font-size: 18px;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 5px;
     }
 
     .crystal {
         padding: 5px;
+    }
+
+    .crystal img {
+        margin-bottom: 5px;
+    }
+
+    .view-details-button {
+        padding: 8px 15px;
     }
 }

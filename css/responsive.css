@@ -50,7 +50,7 @@ body {
 }
 
 /* Media query for smaller screens (e.g., tablets) */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1950px) {
     .header {
         padding: 10px;
         font-size: 18px;

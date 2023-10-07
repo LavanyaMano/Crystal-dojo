@@ -79,7 +79,7 @@ footer {
 }
 
 /* Media query for smaller screens */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1950px) {
     /* Display the menu icon and hide the navigation menu items */
     #menu-icon {
         display: block;

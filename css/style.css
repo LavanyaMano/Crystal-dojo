@@ -1,0 +1,187 @@
+/* styles.css */
+
+/* Define the color scheme */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style the header */
+header {
+    background-color: #8b70e9;
+    color: #ffffff;
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; /* Align the items at both ends of the header */
+    align-items: center;
+}
+
+/* Style the logo image */
+header img {
+    max-width: 80px;
+    height: auto;
+    margin-right: 20px;
+}
+
+/* Style the sandwich menu icon */
+#menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Add a hover effect */
+#menu-icon:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Style the navigation menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Style the main content */
+main {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #8b70e9;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    /* Display the menu icon and hide the navigation menu items */
+    #menu-icon {
+        display: block;
+    }
+    
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #8b70e9;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+    
+    nav ul.show {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center-align the menu items vertically */
+        background-color: #8b70e9;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+
+/* Style the crystals section */
+.crystals-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.crystal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
+}
+
+.crystal {
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.crystal img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.view-details-button {
+    background-color: #8b70e9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.view-details-button:hover {
+    background-color: #634dab;
+}
+
+/* Style the modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #999;
+}
+
+}
